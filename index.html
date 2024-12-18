@@ -19,6 +19,7 @@
     .poppins-font {
         font-family: "Poppins", serif;
     }
+
     #spinner {
         display: none;
     }
@@ -51,21 +52,24 @@
         <div class="text-center">
             <h1 class="text-4xl font-semibold">Search your phone</h1>
             <div class="join mt-8">
-                <input id="search_box" class="input input-bordered join-item w-[752px]" placeholder="Search your phone" />
-                <button onclick="handle_search()" class="px-10 py-2  join-item rounded-r-full bg-[#0D6EFD] text-xl text-white">Search</button>
+                <input id="search_box" class="input input-bordered join-item w-[752px]"
+                    placeholder="Search your phone" />
+                <button onclick="handle_search()"
+                    class="px-10 py-2  join-item rounded-r-full bg-[#0D6EFD] text-xl text-white">Search</button>
             </div>
-        
+
         </div>
         <div class="w-full flex justify-center mt-16">
             <span id="spinner" class="loading loading-bars loading-lg"></span>
         </div>
-        
+
         <div id="phones_container" class=" grid grid-cols-3 gap-16">
 
         </div>
 
         <div class="flex justify-center mt-16">
-            <button onclick="handle_show_all()" class="text-xl font-bold text-white px-10 py-4 rounded-lg bg-[#0D6EFD]">Show All</button>
+            <button onclick="handle_show_all()"
+                class="text-xl font-bold text-white px-10 py-4 rounded-lg bg-[#0D6EFD]">Show All</button>
         </div>
     </main>
     <footer class="translate-y-72 bg-[#0D6EFD0D]">
@@ -121,6 +125,14 @@
             </footer>
         </div>
     </footer>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <div id="modal_container">
+
+        
+
+
+    </div>
 
     <script src="./JS/phone.js"></script>
 </body>
